@@ -1,1 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+#titulo1 {
+  padding-top: 50px;
+}
+#btn {
+  background-color: lightgreen;
+}
+.body {
+  background-color: gray;
+}
