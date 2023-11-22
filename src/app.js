@@ -20,11 +20,10 @@ window.onload = () => {
       "during my lunch",
       "while I was praying"
     ];
-    let randomwho = Math.floor(Math.random() * who.length);
-    let randomaction = Math.floor(Math.random() * action.length);
-    let randomwhat = Math.floor(Math.random() * what.length);
-    let randomwhen = Math.floor(Math.random() * when.length);
-    let excuse = `${who[randomwho]} ${action[randomaction]} ${what[randomwhat]} ${when[randomwhen]}`;
-    return excuse;
+    let randomWho = who[Math.floor(Math.random() * who.length)];
+    let randomAction = action[Math.floor(Math.random() * action.length)];
+    let randomWhat = what[Math.floor(Math.random() * what.length)];
+    let randomWhen = when[Math.floor(Math.random() * when.length)];
+    return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}`;
   };
 };
