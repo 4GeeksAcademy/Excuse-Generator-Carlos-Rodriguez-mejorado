@@ -24,15 +24,7 @@ window.onload = () => {
     let randomaction = Math.floor(Math.random() * action.length);
     let randomwhat = Math.floor(Math.random() * what.length);
     let randomwhen = Math.floor(Math.random() * when.length);
-    let excuse =
-      who[randomwho] +
-      " " +
-      action[randomaction] +
-      " " +
-      what[randomwhat] +
-      " " +
-      when[randomwhen];
-
+    let excuse = `${who[randomwho]} ${action[randomaction]} ${what[randomwhat]} ${when[randomwhen]}`;
     return excuse;
   };
 };
